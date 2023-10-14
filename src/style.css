@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    height: 100vh;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.loginPage {
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px;
+    width: 400px;
+}
+
+
+input {
+    outline: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(216, 248, 248);
+}
+
+button {
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

@@ -2,6 +2,7 @@
 
 Proyecto hecho a base de nodejs y React Vite
 
-#tema: Cadena de cines
-#Agregar: 
+# tema: Cadena de cines
+
+# Agregar: 
 Login junto con un registro y una muestra de peliculas donde podra hacer una reserva mediante un ticket

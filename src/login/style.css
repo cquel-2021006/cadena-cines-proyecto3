@@ -9,17 +9,22 @@ body {
     justify-content: center;
     text-align: center;
     display: flex;
-    height: 100vh;
-    background-color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 .loginPage {
     background-color: white;
     border-radius: 20px;
-    padding: 50px;
+    padding: 30px;
     width: 400px;
+}
+
+.loginPage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
 }
 
 

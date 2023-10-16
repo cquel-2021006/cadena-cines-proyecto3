@@ -1,8 +1,24 @@
-# React + Vite
+# Prueba Tecnica 3
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ESTE PROYECTO ES MERAMENTE PARA PODER REALIZAR UNA PRUEBA TECNICA
+PARA VISUALIZACIÓN DE EL MANEJO DE RENDIMIENTO EN MI PERSONA
 
-Currently, two official plugins are available:
+# Tema
+Cadena de Cines
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Información General del proyecto
+
+FrontEnd desarrollado en React
+BackEnd desarrollado en Nodejs
+(Cadena de conexión con MongoDB)
+
+Ejecutar el comando 
+```
+npm install
+```
+para los modulos de node
+
+Levantar el proyecto usando 
+```
+npm run dev
+```

@@ -24,7 +24,8 @@ export const LoginPage = () => {
                 Swal.fire({
                     title: '¡Inicio de sesión correcto!',
                     text: 'Has iniciado sesión correctamente.',
-                    icon: 'success'
+                    icon: 'success',
+                    timer: 5000
                 })
             } else {
                 Swal.fire({
@@ -58,73 +59,69 @@ export const LoginPage = () => {
 
     return (
         <>
-            <div className="loginPage-container">
-
-                <div className="loginPage" style={{}}>
-                    <h2 className="loginPage-title">{isLogin ? 'Inicia sesión' : 'Regístrate'}</h2>
+            <div className="loginPage">
+                <h1 className="loginPage-title">{isLogin ? 'Inicia sesión' : 'Regístrate'}</h1>
+                <form className="loginPage-form" onSubmit={handleSubmit}>
+                    <input
+                        type="text"
+                        name="email"
+                        value={email}
+                        onChange={(e) =>
+                            setEmail(e.target.value)}
+                        placeholder="Email"
+                        autoComplete="off"
+                    />
                     <br />
-                    <form className="loginPage-form" onSubmit={handleSubmit}>
-                        <input
-                            type="text"
-                            name="email"
-                            value={email}
-                            onChange={(e) =>
-                                setEmail(e.target.value)}
-                            placeholder="Email"
-                            autoComplete="off"
-                        />
-                        <br />
-                        <br />
-                        {!isLogin && (
-                            <>
-                                <input
-                                    type="text"
-                                    name="name"
-                                    value={name}
-                                    onChange={(e) =>
-                                        setName(e.target.value)}
-                                    placeholder="Nombre"
-                                />
-                                <br />
-                                <br />
-                                <input
-                                    type="text"
-                                    name="lastName"
-                                    value={lastName}
-                                    onChange={(e) =>
-                                        setLastName(e.target.value)}
-                                    placeholder="Apellido"
-                                />
-                                <br />
-                                <br />
-                                <input
-                                    type="text"
-                                    name="phone"
-                                    value={phone}
-                                    onChange={(e) =>
-                                        setPhone(e.target.value)}
-                                    placeholder="Teléfono"
-                                />
-                                <br />
-                                <br />
-                            </>
-                        )}
-                        <input
-                            type="password"
-                            name="password"
-                            value={password}
-                            onChange={(e) =>
-                                setPassword(e.target.value)}
-                            placeholder="Contraseña" />
-                        <br />
-                        <br />
-                        <button type="submit">{isLogin ? 'Inicar Sesion' : 'Registrarse'}</button>
-                    </form>
                     <br />
-                    <button onClick={() => setIsLogin(!isLogin)}>
-                        {isLogin ? '¿No tienes una cuenta? Regístrate' : '¿Ya tienes una cuenta? Inicia sesión'}
-                    </button>
-                </div>
+                    {!isLogin && (
+                        <>
+                            <input
+                                type="text"
+                                name="name"
+                                value={name}
+                                onChange={(e) =>
+                                    setName(e.target.value)}
+                                placeholder="Nombre"
+                            />
+                            <br />
+                            <br />
+                            <input
+                                type="text"
+                                name="lastName"
+                                value={lastName}
+                                onChange={(e) =>
+                                    setLastName(e.target.value)}
+                                placeholder="Apellido"
+                            />
+                            <br />
+                            <br />
+                            <input
+                                type="text"
+                                name="phone"
+                                value={phone}
+                                onChange={(e) =>
+                                    setPhone(e.target.value)}
+                                placeholder="Teléfono"
+                            />
+                            <br />
+                            <br />
+                        </>
+                    )}
+                    <input
+                        type="password"
+                        name="password"
+                        value={password}
+                        onChange={(e) =>
+                            setPassword(e.target.value)}
+                        placeholder="Contraseña" />
+                    <br />
+                    <br />
+                    <button type="submit">{isLogin ? 'Inicar Sesion' : 'Registrarse'}</button>
+                </form>
+                <br />
+                <button onClick={() => setIsLogin(!isLogin)}>
+                    {isLogin ? '¿No tienes una cuenta? Regístrate' : '¿Ya tienes una cuenta? Inicia sesión'}
+                </button>
             </div>
         </>
     )
